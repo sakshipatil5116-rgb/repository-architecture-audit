@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessible Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div><h1>Accessible Dashboard</h1><p>Semantic HTML5 &amp; Accessible Component Architecture</p></div>
+  <button type="button" class="menu-button" aria-controls="site-navigation" aria-expanded="false">Menu</button>
+</header>
+<nav id="site-navigation" aria-label="Primary navigation">
+<ul>
+<li><a href="index.html" aria-current="page">Home</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="form.html">Accessible Form</a></li>
+</ul>
+</nav>
+<div class="page-layout">
+<aside class="sidebar" aria-labelledby="sidebar-title">
+<h2 id="sidebar-title">Quick Links</h2>
+<ul><li><a href="#overview">Overview</a></li><li><a href="#features">Features</a></li><li><a href="dashboard.html">Dashboard</a></li><li><a href="form.html">Form</a></li></ul>
+</aside>
+<main id="main-content">
+<section id="overview" aria-labelledby="overview-title"><h2 id="overview-title">Project Overview</h2><p>This project demonstrates a clean semantic HTML5 structure with accessible navigation, content sections, forms, and a modal dialog.</p></section>
+<section id="features" aria-labelledby="features-title"><h2 id="features-title">Key Features</h2>
+<div class="cards">
+<article><h3>Semantic Structure</h3><p>Uses header, nav, main, section, article, aside, and footer.</p></article>
+<article><h3>Accessible Controls</h3><p>Controls have accessible names and visible keyboard focus.</p></article>
+<article><h3>Form Validation</h3><p>Labels, fieldsets, required fields, and HTML validation are included.</p></article>
+</div></section>
+<section aria-labelledby="modal-section-title"><h2 id="modal-section-title">Modal Example</h2><button type="button" id="open-modal" class="button">Open information</button></section>
+<dialog id="info-modal" aria-labelledby="modal-title"><article><h2 id="modal-title">Information</h2><p>This is an accessible native HTML dialog.</p><button type="button" id="close-modal" class="button">Close</button></article></dialog>
+</main>
+</div>
+<footer><p>&copy; 2026 Accessible Dashboard Project</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

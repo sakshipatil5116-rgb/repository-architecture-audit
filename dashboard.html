@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dashboard</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header"><div><h1>Accessible Dashboard</h1><p>Dashboard</p></div><button type="button" class="menu-button" aria-controls="site-navigation" aria-expanded="false">Menu</button></header>
+<nav id="site-navigation" aria-label="Primary navigation"><ul><li><a href="index.html">Home</a></li><li><a href="dashboard.html" aria-current="page">Dashboard</a></li><li><a href="form.html">Accessible Form</a></li></ul></nav>
+<div class="page-layout">
+<aside class="sidebar" aria-labelledby="sidebar-title"><h2 id="sidebar-title">Dashboard Menu</h2><ul><li><a href="#summary">Summary</a></li><li><a href="#data">Data table</a></li></ul></aside>
+<main id="main-content">
+<section id="summary" aria-labelledby="summary-title"><h2 id="summary-title">Dashboard Summary</h2><div class="cards">
+<article><h3>Total Users</h3><p class="metric">1,250</p></article><article><h3>Active Users</h3><p class="metric">980</p></article><article><h3>Completed Tasks</h3><p class="metric">735</p></article>
+</div></section>
+<section id="data" aria-labelledby="data-title"><h2 id="data-title">Data Table</h2>
+<table><caption>Project activity summary</caption><thead><tr><th scope="col">Project</th><th scope="col">Owner</th><th scope="col">Status</th><th scope="col">Progress</th></tr></thead>
+<tbody><tr><th scope="row">Accessibility</th><td>Team A</td><td>In progress</td><td>80%</td></tr><tr><th scope="row">Architecture</th><td>Team B</td><td>Complete</td><td>100%</td></tr><tr><th scope="row">Testing</th><td>Team C</td><td>Pending</td><td>45%</td></tr></tbody></table>
+</section>
+</main></div>
+<footer><p>&copy; 2026 Accessible Dashboard Project</p></footer>
+<script src="script.js"></script>
+</body></html>
